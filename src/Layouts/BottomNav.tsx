@@ -35,7 +35,7 @@ const BottomNav = ({ children }: ChildrenProps) => {
 
 
     return (
-        <Box paddingTop={20} background="azure">
+        <Box>
             {children}
             <Box
                 position="fixed"

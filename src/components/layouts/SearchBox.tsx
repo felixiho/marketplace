@@ -7,7 +7,7 @@ import { FaSearch } from "react-icons/fa";
 
 const SearchBox = () => {
     return (
-        <InputGroup>
+        <InputGroup borderColor={colors.brand}>
             <InputLeftElement
                 pointerEvents='none'
                 children={<IconContext.Provider value={{ color: colors.brand }}><FaSearch /></IconContext.Provider>} />

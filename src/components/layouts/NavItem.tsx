@@ -18,7 +18,7 @@ const NavItem = ({
                 <IconContext.Provider value={{ size: "25px", color: (isActive ? colors.green : colors.brand), style: { margin: "0 auto" } }} >
                     <Icon width={"30px"} />
                 </IconContext.Provider>
-                <Text mt={2} fontSize="small" textTransform={"capitalize"} fontWeight={"extrabold"} color={isActive ? "black" : colors.brand} textAlign={"center"} >{name}</Text>
+                <Text mt={2} fontSize="small" textTransform={"capitalize"} fontWeight={"semibold"} color={isActive ? "black" : colors.brand} textAlign={"center"} >{name}</Text>
             </Link>
         </Box>
     );

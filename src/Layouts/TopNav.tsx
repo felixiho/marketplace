@@ -11,9 +11,11 @@ const TopNav = () => {
             top={0}
             width="full"
             overflow={"hidden"}
-            backgroundColor="white"
+            zIndex={3}
+            // backgroundColor="white"
             padding={6}
-            boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px">
+            // boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px"
+            >
             <Flex>
                 <SearchBox />
                 <NotificationIcon Icon={AiOutlineShopping} > 1</NotificationIcon>

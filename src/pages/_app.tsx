@@ -2,9 +2,15 @@ import '@fontsource/raleway/400.css'
 import '@fontsource/raleway/500.css'
 import '@fontsource/raleway/600.css'
 import '@fontsource/outfit/300.css'
-import '@fontsource/outfit/600.css'
+import '@fontsource/outfit/400.css'
+import '@fontsource/outfit/500.css' 
+import '@fontsource/outfit/600.css' 
+import '@fontsource/outfit/700.css' 
 import '@fontsource/outfit/800.css' 
+import '@fontsource/outfit/900.css' 
 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import type { ReactElement, ReactNode } from 'react'
 import type { NextPage } from 'next'
 import theme from '@/config/chakra'
