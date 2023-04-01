@@ -35,7 +35,7 @@ const BottomNav = ({ children }: ChildrenProps) => {
 
 
     return (
-        <Box background="azure">
+        <Box paddingTop={20} background="azure">
             {children}
             <Box
                 position="fixed"
@@ -44,6 +44,7 @@ const BottomNav = ({ children }: ChildrenProps) => {
                 overflow={"hidden"}
                 background="white"
                 padding={4}
+                boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px"
             >
                 <Flex
                     width={'full'}

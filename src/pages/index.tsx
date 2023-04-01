@@ -1,5 +1,6 @@
 import BottomNav from '@/Layouts/BottomNav'
 import Layout from '@/Layouts/Layout'
+import TopNav from '@/Layouts/TopNav'
 import { Box } from '@chakra-ui/react'
 import { ReactElement } from 'react'
 import { NextPageWithLayout } from './_app'
@@ -16,6 +17,7 @@ const Home: NextPageWithLayout = () => {
 Home.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
+      <TopNav />
       <BottomNav>
         {page}
       </BottomNav>
