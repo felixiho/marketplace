@@ -5,15 +5,15 @@ import { ReactElement } from 'react'
 import { NextPageWithLayout } from './_app'
 
 
-const Home: NextPageWithLayout = () => {
+const Wallet: NextPageWithLayout = () => {
   return (
     <>
-      <Box height="100vh" fontSize={32} fontWeight={500}>Buy New items</Box>
+      <Box height="100vh" fontSize={32} fontWeight={500}>Buy Wallet items</Box>
     </>
   )
 }
 
-Home.getLayout = function getLayout(page: ReactElement) {
+Wallet.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
       <BottomNav>
@@ -23,4 +23,4 @@ Home.getLayout = function getLayout(page: ReactElement) {
   )
 }
 
-export default Home
+export default Wallet

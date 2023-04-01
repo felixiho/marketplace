@@ -1,9 +1,19 @@
 import { extendTheme } from '@chakra-ui/react'
 
+
+export const colors = {
+    brand: "#8B919F",
+    green: "4AB299"
+}
+
+
 const theme = extendTheme({
   fonts: {
-    heading: `'Raleway', sans-serif`,
-    body: `'Raleway', sans-serif`,
+    heading: `Outfit, sans-serif`,
+    body: `Raleway, sans-serif`,
+  },
+  colors: {
+    brand: "#8B919F",
   },
 })
 

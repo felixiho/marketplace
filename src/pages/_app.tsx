@@ -1,3 +1,10 @@
+import '@fontsource/raleway/400.css'
+import '@fontsource/raleway/500.css'
+import '@fontsource/raleway/600.css'
+import '@fontsource/outfit/300.css'
+import '@fontsource/outfit/600.css'
+import '@fontsource/outfit/800.css' 
+
 import type { ReactElement, ReactNode } from 'react'
 import type { NextPage } from 'next'
 import theme from '@/config/chakra'
