@@ -1,6 +1,7 @@
 import BottomNav from '@/Layouts/BottomNav'
 import Layout from '@/Layouts/Layout'
 import TopNav from '@/Layouts/TopNav'
+import BestSelling from '@/modules/Home/BestSelling'
 import Carousel from '@/modules/Home/Carousel' 
 import Categories from '@/modules/Home/Categories'
 import { Box } from '@chakra-ui/react'
@@ -10,9 +11,10 @@ import { NextPageWithLayout } from './_app'
 
 const Home: NextPageWithLayout = () => {
   return ( 
-      <Box height="100vh" as="section" > 
+      <Box pb={20} as="section" > 
         <Carousel />
         <Categories />
+        <BestSelling />
       </Box> 
   )
 }

@@ -12,7 +12,7 @@ const CarouselItem = ({
 }:CarouselItemType) => {
     return (
         <Box 
-            height={"280px"}
+            height={"270px"}
             padding={6}
             backgroundPosition="center"
             backgroundSize={"cover"}
@@ -27,5 +27,5 @@ const CarouselItem = ({
     );
 }
  
-    
+
 export default CarouselItem;

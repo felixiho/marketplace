@@ -51,11 +51,10 @@ const Categories = () => {
         <Box
             as="section"
             pt={3}
-            pb={6}
+            pb={8}
             px={1}
             bg="white"
             boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px"
-
         >
             <Slider {...settings}>
                 {

@@ -43,6 +43,7 @@ const BottomNav = ({ children }: ChildrenProps) => {
                 width="full"
                 overflow={"hidden"}
                 background="white"
+                zIndex={3}
                 padding={4}
                 boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px"
             >
