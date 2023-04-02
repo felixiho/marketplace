@@ -9,6 +9,7 @@ import ImageSelector from '@/modules/Product/ImageSelector'
 import ProductInfo from '@/modules/Product/ProductInfo'
 import AboutProduct from '@/modules/Product/AboutProduct'
 import Description from '@/modules/Product/Description'
+import ShippingInformation from '@/modules/Product/ShippingInformation'
 
 
 const Product: NextPageWithLayout = () => {
@@ -18,6 +19,7 @@ const Product: NextPageWithLayout = () => {
             <ProductInfo />
             <AboutProduct />
             <Description />
+            <ShippingInformation />
         </Box>
     )
 }
