@@ -6,13 +6,14 @@ import { NextPageWithLayout } from './_app'
 import ProductBottomNav from '@/Layouts/ProductBottomNav'
 import ProductNav from '@/Layouts/ProductNav'
 import ImageSelector from '@/modules/Product/ImageSelector'
+import ProductInfo from '@/modules/Product/ProductInfo'
 
 
 const Product: NextPageWithLayout = () => {
     return (
-        <Box pb={20} as="section" > 
-        <ImageSelector />
-
+        <Box pb={20} as="section" >
+            <ImageSelector />
+            <ProductInfo />
         </Box>
     )
 }

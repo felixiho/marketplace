@@ -18,7 +18,7 @@ const ImageSelector = () => {
     return (
         <Box position="relative" mt={20} mx={6} borderRadius={4}>
             <Box   >
-                <Image src={images[currentImage]} alt="shirt image" objectFit={"cover"} height="330px" width="full" borderRadius={6}/>
+                <Image src={images[currentImage]} alt="shirt image" objectFit={"cover"} height="330px" width="full" borderRadius={6} />
             </Box>
             <Flex position={"absolute"} top={4} left={4} direction="column">
                 {

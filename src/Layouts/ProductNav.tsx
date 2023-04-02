@@ -6,6 +6,7 @@ import { AiOutlineShopping, AiOutlineLeft, AiOutlineShareAlt, AiFillHeart } from
 import { IconContext, IconType } from "react-icons";
 import { colors } from "@/config/chakra";
 import HeaderIcon from "@/components/common/HeaderIcon";
+import Link from "next/link";
 
 
 const ProductNav = () => {
@@ -23,10 +24,12 @@ const ProductNav = () => {
             boxShadow={showBackground ? "rgba(149, 157, 165, 0.2) 0px 8px 24px" : ""}
         >
             <Flex justifyContent={"space-between"}>
-                <IconContext.Provider value={{ size: "30px", }}>
-                    <AiOutlineLeft />
-                </IconContext.Provider>
-                <Flex> 
+                <Link href={"/"}>
+                    <IconContext.Provider value={{ size: "30px", }}>
+                        <AiOutlineLeft />
+                    </IconContext.Provider>
+                </Link>
+                <Flex>
                     <HeaderIcon Icon={AiFillHeart} />
                     <HeaderIcon Icon={AiOutlineShareAlt} useDefaultColor={true} />
                     <NotificationIcon Icon={AiOutlineShopping} >1 </NotificationIcon>
