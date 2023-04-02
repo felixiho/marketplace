@@ -1,10 +1,14 @@
 import ProductCard, { ProductCardType } from "@/components/products/ProductCard";
-import { colors } from "@/config/chakra";
+import { colors } from "@/config/chakra"; 
 import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
+import { useScroll, useMotionValueEvent } from "framer-motion";
+import { createRef,  useRef, useState } from "react";
 
 
 
-const BestSelling = () => {
+const BestSelling = () => { 
+
+
     const allProducts: ProductCardType[] = [
         {
             id: 1,
@@ -95,28 +99,47 @@ const BestSelling = () => {
             price: '$32.90'
         },
     ]
+    const [snap, setSnap] = useState(false)
+    const elementsRef: any = useRef([1, 2].map(() => createRef()));
+    const { scrollY } = useScroll()
+
+
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        if(latest > 200){
+            setSnap(true)
+        } else{
+            setSnap(false)
+        } 
+    }) 
+
 
     const half = Math.floor(allProducts.length / 2)
-    const productSetA = allProducts.slice(0,half)
+    const productSetA = allProducts.slice(0, half)
     const productSetB = allProducts.slice(half, allProducts.length)
 
 
     return (
-        <Box as="section" backgroundColor={colors.whiteSmoke} py={4} px={6}>
-            <Flex width={"full"} justifyContent="space-between" mb={4}>
+        <Box as="section" backgroundColor={colors.whiteSmoke} pb={4}   >
+            <Flex width={"full"} backgroundColor={colors.whiteSmoke} px={6} py={6} justifyContent="space-between" mb={4} position={"sticky"} top="88px" zIndex={4}>
                 <Heading color={colors.primary} fontSize="xl"  >Best Selling Products</Heading>
                 <Text color={colors.green} fontWeight="semibold">
                     See more
                 </Text>
             </Flex>
-            <Grid templateColumns={"repeat(2, 1fr)"} gap={6}>
-                {
-                    productSetA.map(product => (
-                        <ProductCard key={product.id} {...product} />
-                    ))
+            <Box height={"500px"} overflowY={snap ? "scroll" : "hidden"} scrollSnapType={"y mandatory"}>
+                { 
+                    [productSetA, productSetB, productSetA].map((productSet, index) =>
+                        <Grid ref={elementsRef[index]} height={"500px"} scrollSnapAlign="center" templateColumns={"repeat(2, 1fr)"} columnGap={6} px={6} >
+                            {
+                                productSet.map(product => (
+                                    <ProductCard key={product.id} {...product} />
+                                ))
+                            }
+
+                        </Grid>)
                 }
 
-            </Grid>
+            </Box>
 
         </Box>
     );

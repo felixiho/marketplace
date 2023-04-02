@@ -16,7 +16,7 @@ export type ProductCardType = {
 
 const ProductCard = ({ images, category, title, stars, reviews, price }: ProductCardType) => {
     return (
-        <GridItem  >
+        <GridItem mb={4}  >
             <Box position="relative">
                 <Box height={28} overflow={"hidden"} >
                     <Image src={images[0]} alt="shirt image" />

@@ -1,33 +1,12 @@
 import NotificationIcon from "@/components/common/NotificationIcon";
 import SearchBox from "@/components/layouts/SearchBox";
-import { Box, Flex } from "@chakra-ui/react";
-import { useCallback, useEffect, useState } from "react";
+import { useHomeContext } from "@/context/HomeContext";
+import { Box, Flex } from "@chakra-ui/react"; 
 import { AiOutlineShopping, AiOutlineMessage } from "react-icons/ai";
 
 
 const TopNav = () => {
-    const [prevScrollPosition, setPrevScrollPosition] = useState(0)
-    const [showBackground, setShowBackground] = useState(false)
-
-
-    const handleScrollDown = useCallback(() => {
-        const currentScrollPosition = window.scrollY 
-        if (currentScrollPosition > prevScrollPosition) {
-            setShowBackground(true)
-        } else {
-            setShowBackground(false)
-        } 
-        setPrevScrollPosition(currentScrollPosition)
-    }, [])
-
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScrollDown, { passive: true })
-
-        return () => window.removeEventListener("scroll", handleScrollDown)
-    }, [])
-
-
+     const {showBackground} = useHomeContext() 
     return ( 
         <Box
             position="fixed"
