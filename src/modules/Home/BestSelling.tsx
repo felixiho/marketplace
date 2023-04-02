@@ -113,6 +113,7 @@ const BestSelling = () => {
     }) 
 
 
+    //we don't want to mutate the array as it's a bad practice that leads to bugs
     const half = Math.floor(allProducts.length / 2)
     const productSetA = allProducts.slice(0, half)
     const productSetB = allProducts.slice(half, allProducts.length)
