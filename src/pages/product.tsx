@@ -10,6 +10,7 @@ import ProductInfo from '@/modules/Product/ProductInfo'
 import AboutProduct from '@/modules/Product/AboutProduct'
 import Description from '@/modules/Product/Description'
 import ShippingInformation from '@/modules/Product/ShippingInformation'
+import SellerInformation from '@/modules/Product/SellerInformation'
 
 
 const Product: NextPageWithLayout = () => {
@@ -20,6 +21,7 @@ const Product: NextPageWithLayout = () => {
             <AboutProduct />
             <Description />
             <ShippingInformation />
+            <SellerInformation />
         </Box>
     )
 }
