@@ -7,13 +7,15 @@ import ProductBottomNav from '@/Layouts/ProductBottomNav'
 import ProductNav from '@/Layouts/ProductNav'
 import ImageSelector from '@/modules/Product/ImageSelector'
 import ProductInfo from '@/modules/Product/ProductInfo'
+import AboutProduct from '@/modules/Product/AboutProduct'
 
 
 const Product: NextPageWithLayout = () => {
     return (
-        <Box pb={20} as="section" >
+        <Box my={20} as="section" >
             <ImageSelector />
             <ProductInfo />
+            <AboutProduct />
         </Box>
     )
 }

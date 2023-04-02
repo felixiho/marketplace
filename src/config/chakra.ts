@@ -16,7 +16,7 @@ const theme = extendTheme({
     body: `Outfit, sans-serif`,
   },
   colors: {
-    brand: "#8B919F",
+    brand: "#8B919F", 
   },
 })
 
