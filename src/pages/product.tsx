@@ -3,7 +3,7 @@ import Layout from '@/Layouts/Layout'
 import { Box } from '@chakra-ui/react'
 import { ReactElement } from 'react'
 import { NextPageWithLayout } from './_app'
-import TopNav from '@/Layouts/TopNav'
+import ProductBottomNav from '@/Layouts/ProductBottomNav'
 import ProductNav from '@/Layouts/ProductNav'
 
 
@@ -19,9 +19,9 @@ Product.getLayout = function getLayout(page: ReactElement) {
     return (
         <Layout>
             <ProductNav />
-            <BottomNav>
+            <ProductBottomNav>
                 {page}
-            </BottomNav>
+            </ProductBottomNav>
         </Layout>
     )
 }
