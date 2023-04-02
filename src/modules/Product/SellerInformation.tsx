@@ -19,7 +19,7 @@ const SellerInformation = () => {
 
 
     return (
-        <Box px={6} py={10} borderBottom={"2px"} borderColor={colors.whiteSmoke}>
+        <Box px={6} py={10}   borderColor={colors.whiteSmoke}>
             <Heading size={"md"} pb={4}> Seller Information: </Heading>
             <Flex >
                 <Avatar src='https://bit.ly/broken-link' />
@@ -30,7 +30,7 @@ const SellerInformation = () => {
                         Visit store
                     </Button>
                 </Flex>
-
+        
             </Flex>
 
         </Box>

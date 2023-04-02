@@ -11,6 +11,8 @@ import AboutProduct from '@/modules/Product/AboutProduct'
 import Description from '@/modules/Product/Description'
 import ShippingInformation from '@/modules/Product/ShippingInformation'
 import SellerInformation from '@/modules/Product/SellerInformation'
+import Ratings from '@/modules/Product/Ratings'
+import Recommended from '@/modules/Product/Recommended'
 
 
 const Product: NextPageWithLayout = () => {
@@ -22,6 +24,8 @@ const Product: NextPageWithLayout = () => {
             <Description />
             <ShippingInformation />
             <SellerInformation />
+            <Ratings />
+            <Recommended />
         </Box>
     )
 }
