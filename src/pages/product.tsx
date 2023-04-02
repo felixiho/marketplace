@@ -8,14 +8,16 @@ import ProductNav from '@/Layouts/ProductNav'
 import ImageSelector from '@/modules/Product/ImageSelector'
 import ProductInfo from '@/modules/Product/ProductInfo'
 import AboutProduct from '@/modules/Product/AboutProduct'
+import Description from '@/modules/Product/Description'
 
 
 const Product: NextPageWithLayout = () => {
     return (
-        <Box my={20} as="section" >
+        <Box my={20} pb={20} as="section" >
             <ImageSelector />
             <ProductInfo />
             <AboutProduct />
+            <Description />
         </Box>
     )
 }
