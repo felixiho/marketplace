@@ -1,5 +1,4 @@
-import BottomNav from '@/Layouts/BottomNav'
-import Layout from '@/Layouts/Layout'
+ import Layout from '@/Layouts/Layout'
 import { Box } from '@chakra-ui/react'
 import { ReactElement } from 'react'
 import { NextPageWithLayout } from './_app'

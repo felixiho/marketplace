@@ -6,7 +6,7 @@ import BestSelling from '@/modules/Home/BestSelling'
 import Carousel from '@/modules/Home/Carousel'
 import Categories from '@/modules/Home/Categories'
 import { Box } from '@chakra-ui/react'
-import {   ReactElement } from "react";
+import { ReactElement } from "react";
 import { NextPageWithLayout } from './_app'
 
 

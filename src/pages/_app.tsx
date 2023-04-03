@@ -36,6 +36,5 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
       <ChakraProvider theme={theme}>
         {getLayout(<Component {...pageProps} />)}
       </ChakraProvider>
-
-    </PageTransition>)
+      </PageTransition>)
 }
