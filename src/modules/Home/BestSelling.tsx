@@ -129,8 +129,8 @@ const BestSelling = () => {
             </Flex>
             <Box height={"500px"} overflowY={snap ? "scroll" : "hidden"} scrollSnapType={"y mandatory"}>
                 { 
-                    [productSetA, productSetB, productSetA].map((productSet, index) =>
-                        <Grid ref={elementsRef[index]} height={"500px"} scrollSnapAlign="center" templateColumns={"repeat(2, 1fr)"} columnGap={6} px={6} >
+                    [productSetA, productSetB].map((productSet, index) =>
+                        <Grid key={productSet[0].id} ref={elementsRef[index]} height={"500px"} scrollSnapAlign="center" templateColumns={"repeat(2, 1fr)"} columnGap={6} px={6} >
                             {
                                 productSet.map(product => (
                                     <ProductCard key={product.id} {...product} />
