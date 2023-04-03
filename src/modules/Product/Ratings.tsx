@@ -45,7 +45,7 @@ const Ratings = () => {
             <Flex justifyContent={"space-around"} >
                 {
                     images.map((image, index) =>
-                        <Image height={24} px={1} src={image}   borderRadius={4} />)
+                        <Image key={image} height={24} px={1} src={image}   borderRadius={4} />)
                 }
             </Flex>
         </Box>

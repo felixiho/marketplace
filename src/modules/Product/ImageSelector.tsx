@@ -23,7 +23,7 @@ const ImageSelector = () => {
             <Flex position={"absolute"} top={4} left={4} direction="column">
                 {
                     images.map((image, index) =>
-                        <Image cursor={"pointer"} onClick={() => setCurrentImage(index)} mt={2} height={"45px"} src={image} border="1px solid #F0F0F0 " borderRadius={4} />)
+                        <Image key={image} cursor={"pointer"} onClick={() => setCurrentImage(index)} mt={2} height={"45px"} src={image} border="1px solid #F0F0F0 " borderRadius={4} />)
                 }
             </Flex>
         </Box>
