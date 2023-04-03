@@ -9,51 +9,7 @@ import { createRef,  useRef, useState } from "react";
 const Recommended = () => { 
 
 
-    const allProducts: ProductCardType[] = [
-        {
-            id: 1,
-            images: [
-                'https://cdn.shopify.com/s/files/1/0706/1707/1902/products/ZANEROBE-Lowgo-Crew-Sweat-Mauve-Flatlay-01-_1_2048x.jpg?v=1677645901'
-            ],
-            category: 'Shirt',
-            title: "Essential Men's Short-Sleeve Crewneck T-shirt",
-            stars: 3.3,
-            reviews: 3211,
-            price: '$32.90'
-        },
-        {
-            id: 2,
-            images: [
-                'https://cdn.shopify.com/s/files/1/0706/1707/1902/products/ZANEROBE-Lowgo-Hood-Sweat-Mauve-Flatlay-01-_2_2048x.jpg?v=1677645911'
-            ],
-            category: 'Shirt',
-            title: "Essential Men's Short-Sleeve Crewneck T-shirt",
-            stars: 3.3,
-            reviews: 3211,
-            price: '$32.90'
-        },
-        {
-            id: 3,
-            images: [
-                'https://cdn.shopify.com/s/files/1/0706/1707/1902/products/ZANEROBE-Lowgo-Crew-Sweat-Fog-Flatlay-01_022b7d5b-8394-4ced-ab1b-3ad56ff9ab35_2048x.jpg?v=1675730907'
-            ],
-            category: 'Shirt',
-            title: "Essential Men's Short-Sleeve Crewneck T-shirt",
-            stars: 3.3,
-            reviews: 3211,
-            price: '$32.90'
-        },
-        {
-            id: 4,
-            images: [
-                'https://cdn.shopify.com/s/files/1/0706/1707/1902/products/ZANEROBE-Lowgo-Hood-Sweat-Fog-Flatlay-01_2ef50299-095d-49f8-bf0a-1ba5feec322c_2048x.jpg?v=1675731500'
-            ],
-            category: 'Shirt',
-            title: "Essential Men's Short-Sleeve Crewneck T-shirt",
-            stars: 3.3,
-            reviews: 3211,
-            price: '$32.90'
-        },
+    const allProducts: ProductCardType[] = [ 
         {
             id: 5,
             images: [
