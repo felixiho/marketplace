@@ -9,7 +9,7 @@ import TopNav from '@/Layouts/TopNav'
 const Settings: NextPageWithLayout = () => {
     return (
         <>
-            <Box height="100vh" fontSize={32} fontWeight={500}>Buy Settings items</Box>
+            <Box height="100vh"   pt={24} px={6} fontSize={32} fontWeight={500}> Settings page</Box>
         </>
     )
 }

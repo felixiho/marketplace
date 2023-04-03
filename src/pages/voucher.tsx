@@ -9,7 +9,7 @@ import { NextPageWithLayout } from './_app'
 const Voucher: NextPageWithLayout = () => {
   return (
     <>
-      <Box height="100vh" fontSize={32} fontWeight={500}>Buy Voucher items</Box>
+    <Box height="100vh"  pt={24} px={6} fontSize={32} fontWeight={500}> Voucher page</Box>
     </>
   )
 }
